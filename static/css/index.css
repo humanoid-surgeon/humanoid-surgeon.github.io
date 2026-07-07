@@ -9,10 +9,21 @@ body {
 
 .publication-title {
     font-family: 'Google Sans', sans-serif;
+    font-size: 2.5rem !important;
+    line-height: 1.15;
+    white-space: nowrap;
 }
 
 .publication-authors {
     font-family: 'Google Sans', sans-serif;
+}
+
+.publication-venue {
+    color: #363636;
+    font-family: 'Google Sans', sans-serif;
+    font-size: 2.0rem;
+    font-weight: 300;
+    margin-bottom: 0.75rem;
 }
 
 .publication-authors a {
@@ -30,15 +41,22 @@ body {
 .publication-logos {
   align-items: center;
   display: flex;
+  flex-wrap: nowrap;
   gap: 2rem;
   justify-content: center;
   margin: 1.25rem 0 0.25rem;
 }
 
+.publication-logos a {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
 .publication-logos img {
-  max-height: 64px;
-  max-width: 220px;
+  height: 120px;
   object-fit: contain;
+  width: 360px;
 }
 
 .teaser .hero-body {
@@ -48,6 +66,14 @@ body {
 
 .teaser {
   font-family: 'Google Sans', sans-serif;
+}
+
+.teaser-image {
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 100%;
 }
 
 .media-placeholder {
@@ -90,13 +116,150 @@ body {
   min-height: 260px;
 }
 
+.figure-card,
+.publication-figure,
+.video-card {
+  margin: 0;
+}
+
+.figure-card,
+.video-card {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.figure-card img,
+.publication-figure img,
+.video-card video {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.video-card video {
+  aspect-ratio: 16 / 9;
+  background: #000;
+  object-fit: cover;
+}
+
+.figure-card img {
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.figure-card figcaption,
+.publication-figure figcaption,
+.video-card figcaption {
+  color: #4a4a4a;
+  font-size: 0.95rem;
+  line-height: 1.45;
+  margin-top: 0.75rem;
+  text-align: center;
+}
+
+.publication-figure {
+  margin-top: 1rem;
+}
+
+.display-sections .columns + .columns {
+  margin-top: 3rem;
+}
+
+.publication-figure img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.figure-system img {
+  max-width: 920px;
+}
+
+.figure-benchtop img {
+  max-width: 760px;
+}
+
+.figure-in-vivo img {
+  max-width: 920px;
+}
+
+/* Revertible polish layer: remove this block and the .page-nav HTML to undo. */
+.section {
+  border-top: 1px solid #eeeeee;
+}
+
+.hero + .hero,
+.hero + .section {
+  border-top: none;
+}
+
+.page-nav {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.page-nav a + a::before {
+  color: #b5b5b5;
+  content: "|";
+  margin: 0 0.75rem;
+}
+
+.page-nav a {
+  color: #4a4a4a;
+  font-family: 'Google Sans', sans-serif;
+  font-size: 1rem;
+  padding: 0.15rem 0;
+  transition: color 160ms ease;
+}
+
+.page-nav a:hover {
+  color: hsl(204, 86%, 53%);
+}
+
+.teaser-image,
+.publication-figure img,
+.video-card {
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.10);
+}
+
+.teaser-image {
+  border-radius: 12px;
+}
+
+.publication-figure img,
+.video-card {
+  border-radius: 10px;
+}
+
+.video-card figcaption {
+  padding-bottom: 0.75rem;
+}
+
+.publication-authors a,
+.publication-logos a {
+  transition: opacity 160ms ease;
+}
+
+.publication-authors a:hover,
+.publication-logos a:hover {
+  opacity: 0.72;
+}
+
 @media screen and (max-width: 768px) {
+  .publication-title {
+    font-size: 2.5rem !important;
+    white-space: normal;
+  }
+
   .publication-logos {
     gap: 1rem;
   }
 
   .publication-logos img {
-    max-height: 48px;
-    max-width: 150px;
+    height: 54px;
+    width: 150px;
   }
 }

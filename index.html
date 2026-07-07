@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="Humanoid Surgeon project page from UC San Diego researchers in engineering and surgery.">
-  <meta name="keywords" content="Humanoid Surgeon, robotic surgery">
+        content="Humanoid Robot Surgeon: A First In-Vivo Feasibility Study">
+  <meta name="keywords" content="Humanoid Robot Surgeon, robotic surgery">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Humanoid Surgeon</title>
+  <title>Humanoid Robot Surgeon: A First In-Vivo Feasibility Study</title>
 
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
         rel="stylesheet">
@@ -22,47 +22,52 @@
 
 <section class="hero">
   <div class="hero-body">
-    <div class="container is-max-desktop">
+    <div class="container is-max-widescreen">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Humanoid Surgeon</h1>
+          <h1 class="title is-1 publication-title">Humanoid Surgeon: A First In-Vivo Feasibility Study</h1>
+
+          <div class="publication-venue">
+            Nature, Vol. x, No. x, 2026
+          </div>
 
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="mailto:z9liang@ucsd.edu">Zekai Liang</a><sup>1,*</sup>,
+              <a href="https://liang-lucas.github.io/">Zekai Liang</a><sup>1,*</sup>,
             </span>
             <span class="author-block">
-              <a href="mailto:nthareja@health.ucsd.edu">Nikita Thareja</a><sup>2</sup>,
+              <a href="https://www.linkedin.com/in/nikitathareja/">Nikita Thareja</a><sup>2</sup>,
             </span>
             <span class="author-block">
-              <a href="mailto:pez004@ucsd.edu">Peihan Zhang</a><sup>1</sup>,
+              <a href="https://www.linkedin.com/in/peihan-zhang/">Peihan Zhang</a><sup>1</sup>,
             </span>
             <span class="author-block">
-              <a href="mailto:cajoyce@ucsd.edu">Calvin Joyce</a><sup>1</sup>,
+              <a href="https://www.linkedin.com/in/calvin-joyce/">Calvin Joyce</a><sup>1</sup>,
             </span>
             <span class="author-block">
-              <a href="mailto:satar@ucsd.edu">Soofiyan Atar</a><sup>1</sup>,
+              <a href="https://www.linkedin.com/in/soofiyan-atar-93227a131/">Soofiyan Atar</a><sup>1</sup>,
+            </span>
+            <br>
+            <span class="author-block">
+              <a href="https://www.linkedin.com/in/florian-richter-373299a0/">Florian Richter</a><sup>1</sup>,
             </span>
             <span class="author-block">
-              <a href="mailto:frichter1995@gmail.com">Florian Richter</a><sup>1</sup>,
+              <a href="https://www.linkedin.com/in/garth-jacobsen-852b9225/">Garth Jacobsen</a><sup>2</sup>,
             </span>
             <span class="author-block">
-              <a href="mailto:gjacobsen@health.ucsd.edu">Garth Jacobsen</a><sup>2</sup>,
+              <a href="https://www.linkedin.com/in/shanglei-liu-563964100/">Shanglei Liu</a><sup>2</sup>,
             </span>
             <span class="author-block">
-              <a href="mailto:s5liu@health.ucsd.edu">Shanglei Liu</a><sup>2</sup>,
+              <a href="https://www.linkedin.com/in/ryan-broderick-6022499/">Ryan Broderick</a><sup>2</sup>,
             </span>
             <span class="author-block">
-              <a href="mailto:rbroderick@health.ucsd.edu">Ryan Broderick</a><sup>2</sup>,
-            </span>
-            <span class="author-block">
-              <a href="mailto:yip@ucsd.edu">Michael Yip</a><sup>1</sup>
+              <a href="https://yip.eng.ucsd.edu/">Michael Yip</a><sup>1</sup>
             </span>
           </div>
 
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <sup>1</sup>Jacobs School of Engineering, UC San Diego
+              <sup>1</sup>Jacobs School of Engineering, UC San Diego,
             </span>
             <span class="author-block">
               <sup>2</sup>Department of Surgery, UC San Diego
@@ -70,8 +75,12 @@
           </div>
 
           <div class="publication-logos">
-            <img src="./static/images/arclab_logo.png" alt="Advanced Robotics and Controls Lab logo">
-            <img src="./static/images/ucsd_som.png" alt="UC San Diego School of Medicine logo">
+            <a href="https://ucsdarclab.com/">
+              <img src="./static/images/arclab_logo.png" alt="Advanced Robotics and Controls Lab logo">
+            </a>
+            <a href="https://surgery.ucsd.edu/centers/cfs/index.html">
+              <img src="./static/images/ucsd_som.png" alt="UC San Diego School of Medicine logo">
+            </a>
           </div>
 
           <div class="column has-text-centered">
@@ -113,6 +122,14 @@
                 </a>
               </span>
             </div>
+            <nav class="page-nav" aria-label="Page sections">
+              <a href="#abstract">Abstract</a>
+              <a href="#video">Video</a>
+              <a href="#system-overview">System</a>
+              <a href="#benchtop-experiment">Benchtop</a>
+              <a href="#live-animal-cholecystectomy">Live Animal</a>
+              <a href="#BibTeX">BibTeX</a>
+            </nav>
           </div>
         </div>
       </div>
@@ -123,12 +140,12 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <div class="media-placeholder teaser-placeholder">
-        Teaser video or image
-      </div>
-      <h2 class="subtitle has-text-centered">
+      <img src="./static/images/cover_art.jpg"
+           class="teaser-image"
+           alt="Humanoid robot surgeon project overview image">
+      <!-- <h2 class="subtitle has-text-centered">
         A short project tagline will go here.
-      </h2>
+      </h2> -->
     </div>
   </div>
 </section>
@@ -138,36 +155,72 @@
     <div class="container">
       <div class="columns is-centered">
         <div class="column">
-          <div class="media-placeholder result-placeholder">Result 1</div>
+          <figure class="video-card">
+            <video autoplay muted loop playsinline controls preload="metadata">
+              <source src="./static/videos/Humanoid Laparoscopy Teleoperation.MOV" type="video/mp4">
+            </video>
+            <figcaption>Humanoid laparoscopy teleoperation</figcaption>
+          </figure>
         </div>
         <div class="column">
-          <div class="media-placeholder result-placeholder">Result 2</div>
+          <figure class="video-card">
+            <video autoplay muted loop playsinline controls preload="metadata">
+              <source src="./static/videos/Humanoid Performing In-Vivo Surgery.MOV" type="video/mp4">
+            </video>
+            <figcaption>Humanoid performing in-vivo surgery</figcaption>
+          </figure>
         </div>
         <div class="column">
-          <div class="media-placeholder result-placeholder">Result 3</div>
+          <figure class="video-card">
+            <video autoplay muted loop playsinline controls preload="metadata">
+              <source src="./static/videos/Gallbladder Removal Surgery.MOV" type="video/mp4">
+            </video>
+            <figcaption>Gallbladder removal surgery</figcaption>
+          </figure>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="section">
+<section class="section" id="abstract">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Add the project abstract here.
+            Recent advances across actuation, control, and learning have rapidly pushed humanoid robots
+            from a distant vision toward near-term real-world deployment. Healthcare is
+            a particularly pressing domain, where staffing shortages and increasing care demand are
+            widening the gap between clinical workload and available skilled labor.
+            While current automation has largely focused on digital and logistical tasks,
+            much hospital work remains embodied, requiring mobility, manipulation, and safe interaction
+            in human-designed environments.
           </p>
           <p>
-            Add a concise summary of the motivation, method, and key findings here.
+            Humanoid form factors offer unique potential, particularly for assisting with surgical tasks.
+            Traditionally, robotic systems for surgery are purpose-built platforms such as Intuitive
+            Surgical's da Vinci Surgical System, and it remains unclear how close current
+            humanoid systems are to meeting the precision, control, and safety requirements of minimally
+            invasive surgery.
+          </p>
+          <p>
+            In this work, we present a systematic evaluation of contemporary humanoid technology for
+            laparoscopic surgical tasks. We develop a humanoid-based laparoscopic teleoperation framework
+            using general-purpose instruments and assess its capabilities through benchtop characterization,
+            dry-lab user studies spanning diverse surgical experience levels, and in vivo porcine studies.
+            Across these evaluations, we quantify technical feasibility, task performance, and clinical
+            readiness relative to established surgical platforms. Together, our study provides an
+            evidence-based assessment of current humanoid capabilities and limitations for surgical
+            applications, highlighting both their promise and key technical challenges that must be
+            addressed before clinical deployment.
           </p>
         </div>
       </div>
     </div>
 
-    <div class="columns is-centered has-text-centered">
+    <div class="columns is-centered has-text-centered" id="video">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Video</h2>
         <div class="publication-video">
@@ -181,86 +234,45 @@
 </section>
 
 <section class="section">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered">
-      <div class="column">
-        <div class="content">
-          <h2 class="title is-3">System Overview</h2>
-          <p>
-            Describe the hardware, software, and workflow here.
-          </p>
-          <div class="media-placeholder feature-placeholder">
-            Overview media
-          </div>
-        </div>
-      </div>
-
-      <div class="column">
-        <div class="content">
-          <h2 class="title is-3">Experiments</h2>
-          <p>
-            Describe the experimental setup, evaluation tasks, and metrics here.
-          </p>
-          <div class="media-placeholder feature-placeholder">
-            Experiment media
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="columns is-centered">
+  <div class="container is-max-desktop display-sections">
+    <div class="columns is-centered" id="system-overview">
       <div class="column is-full-width">
-        <h2 class="title is-3">Results</h2>
-        <div class="content has-text-justified">
-          <p>
-            Add result descriptions, qualitative examples, and quantitative findings here.
-          </p>
-        </div>
-        <div class="columns is-centered">
-          <div class="column">
-            <div class="media-placeholder result-placeholder">Result media</div>
-          </div>
-          <div class="column">
-            <div class="media-placeholder result-placeholder">Comparison media</div>
-          </div>
-        </div>
+        <h2 class="title is-3">System Overview</h2>
+        <figure class="publication-figure figure-system">
+          <img src="./static/images/fig1_system.png" alt="Humanoid surgical teleoperation system overview">
+          <figcaption>
+            Figure 1. Teleoperation system for the surgical humanoid platform.
+          </figcaption>
+        </figure>
       </div>
     </div>
 
-    <div class="columns is-centered">
+    <div class="columns is-centered" id="benchtop-experiment">
       <div class="column is-full-width">
-        <h2 class="title is-3">Related Links</h2>
-        <div class="content has-text-justified">
-          <p>
-            Add links to related papers, project pages, datasets, or lab resources here.
-          </p>
-        </div>
+        <h2 class="title is-3">Benchtop Experiment</h2>
+        <figure class="publication-figure figure-benchtop">
+          <img src="./static/images/fig2_benchtop.png" alt="Benchtop characterization and dry-lab experiments">
+          <figcaption>
+            Figure 2. Benchtop examination of the humanoid surgical workspace and command-execution tracking.
+          </figcaption>
+        </figure>
       </div>
     </div>
 
-    <div class="columns is-centered">
+    <div class="columns is-centered" id="live-animal-cholecystectomy">
       <div class="column is-full-width">
-        <h2 class="title is-3">Contact</h2>
-        <div class="content has-text-justified">
-          <p>
-            <strong>Corresponding author:</strong>
-            <a href="mailto:z9liang@ucsd.edu">z9liang@ucsd.edu</a>
-          </p>
-          <p>
-            <strong>Contributing authors:</strong>
-            <a href="mailto:nthareja@health.ucsd.edu">nthareja@health.ucsd.edu</a>;
-            <a href="mailto:pez004@ucsd.edu">pez004@ucsd.edu</a>;
-            <a href="mailto:cajoyce@ucsd.edu">cajoyce@ucsd.edu</a>;
-            <a href="mailto:satar@ucsd.edu">satar@ucsd.edu</a>;
-            <a href="mailto:frichter1995@gmail.com">frichter1995@gmail.com</a>;
-            <a href="mailto:gjacobsen@health.ucsd.edu">gjacobsen@health.ucsd.edu</a>;
-            <a href="mailto:s5liu@health.ucsd.edu">s5liu@health.ucsd.edu</a>;
-            <a href="mailto:rbroderick@health.ucsd.edu">rbroderick@health.ucsd.edu</a>;
-            <a href="mailto:yip@ucsd.edu">yip@ucsd.edu</a>
-          </p>
-        </div>
+        <h2 class="title is-3">Live Animal Cholecystectomy</h2>
+        <figure class="publication-figure figure-in-vivo">
+          <img src="./static/images/fig4_live_surgery.jpg" alt="Live in vivo surgical study">
+          <figcaption>
+            Figure 4. Live porcine laparoscopic cholecystectomy,
+            showing system deployment, port setup, console operation, tissue retraction, dissection,
+            clipping, and gallbladder removal from the liver bed.
+          </figcaption>
+        </figure>
       </div>
     </div>
+
   </div>
 </section>
 
@@ -268,7 +280,7 @@
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
     <pre><code>@article{humanoidsurgeon2026,
-  title   = {Humanoid Surgeon},
+  title   = {Humanoid Robot Surgeon: A First In-Vivo Feasibility Study},
   author  = {Liang, Zekai and Thareja, Nikita and Zhang, Peihan and Joyce, Calvin and Atar, Soofiyan and Richter, Florian and Jacobsen, Garth and Liu, Shanglei and Broderick, Ryan and Yip, Michael},
   journal = {To appear},
   year    = {2026}
@@ -282,7 +294,7 @@
       <div class="column is-8">
         <div class="content has-text-centered">
           <p>
-            This website template is borrowed from the
+            This website template is adapted from the
             <a href="https://github.com/nerfies/nerfies.github.io">Nerfies project page</a>.
           </p>
         </div>
