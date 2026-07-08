@@ -11,7 +11,7 @@ body {
     font-family: 'Google Sans', sans-serif;
     font-size: 2.5rem !important;
     line-height: 1.15;
-    white-space: nowrap;
+    white-space: normal;
 }
 
 .publication-authors {
@@ -107,7 +107,19 @@ body {
 }
 
 .publication-video {
+  aspect-ratio: 16 / 9;
+  background: #000;
+  border-radius: 10px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.10);
+  overflow: hidden;
   position: relative;
+  width: 100%;
+}
+
+.publication-video iframe {
+  border: 0;
+  display: block;
+  height: 100%;
   width: 100%;
 }
 
